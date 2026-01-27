@@ -4,7 +4,7 @@
 
 An agent that handles *glucose- and diabetes-related advice* for users leveraging knowledge from four sources: 1) the *history* of interactions and medical history of the user if provided; 2) *SPXFusion* analytics for this patient, i.e., most recent results from the ML+DL ensemble forecasting glucose/predicting hypoglycemia (HG) risk; 3) *SPXFusion* population analytics, i.e., drawing comparisons to public data as well as anonymized data and model results from other users (larger user base => more accurate advice); 4) an updated *corpus of research* on the connection between the non-invasive features in SPXFusion and glucose, including restrictions on recommended insulin levels, enforcement of correct boundaries for low and high glucose levels, interpretation of ECG in relation to glucose, etc.
 
-![](/Users/alexxela/Dropbox/borderless/_ml-ai-engineer_/clients/SciPrimeX/projects/Glucoza.png)
+<img src='https://i.ibb.co/C5RfP1nX/Glucoza.png' width=1200>
 
 The Agent refers to a multi-agentic pipeline (MAP) presented in Figure 1. The MAP receives a signal from the environment through the API: either SPXFusion detects a high risk of hypoglycemia (focus only on HG right now for clarity), or a User chat indicates directly or indirectly (e.g., the LLM can detect if the person is feeling symptoms without connecting them to HG) that the User is about to experience HG. These are two structurally different signals, but handled through one MAP for future scalability (see Section 2). The MAP is an *orchestrated system of multiple agents* (with potential sub-agents):
 
