@@ -1,0 +1,67 @@
+## Data Folder
+daniel_model/results/
+
+# Environment variables
+.env
+.env.local
+
+# Standard python ignores
+*.egg-info
+.coverage
+.ipynb_checkpoints
+**/__pycache__/
+.python-version
+*.pyc
+**/build
+
+# Ignore these macos generated files
+.DS_Store
+
+# Ignore VS Code generated files
+*.vscode
+
+# Raw data
+raw_data/
+
+*.csv
+*.sqlite
+*.zip
+*.feather
+*.npy
+
+# Saved models
+models/
+*.joblib
+*.h5
+
+# Any pickle files
+*.pickle
+*.pckl
+*.pkl
+
+# MLflow files
+mlflow.db
+*.tar.gz
+hptune_mlflow_tables/
+
+# Credentials (or files with potentially credentials inside)
+.env
+.env.yaml
+.credentials
+secrets.toml
+*.json
+*.html
+
+# Development notebooks
+*_dev.ipynb
+hypopredict/dev
+/legacy
+notebooks/
+
+# MLflow local storage
+mlruns/
+mlartifacts/
+
+# Logs
+*.log
+logs/
