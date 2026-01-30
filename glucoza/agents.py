@@ -14,6 +14,9 @@ from config import HUGGINGFACE_API_KEY, MODEL_NAME
 @tool
 def get_glucose_predictions() -> list[float]:
     """Get glucose predictions from the model"""
+    # TODO: In a real deployment, query the MCP server (e.g. SPXFusion)
+    # --> SPXFusion "What will the user's glucose be over the next 2 hours?"
+    #       Currently returns mock/hardcoded glucose predictions.
     return [120, 115, 90, 75, 80, 110, 95, 68, 110, 125]
 
 
